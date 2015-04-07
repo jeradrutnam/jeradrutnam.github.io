@@ -10,7 +10,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"tiles"
 				],
@@ -43,7 +43,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"menu"
 				],
@@ -76,7 +76,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"list"
 				],
@@ -109,7 +109,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"grid"
 				],
@@ -143,7 +143,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1034,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"user"
 				],
@@ -176,7 +176,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"settings"
 				],
@@ -212,7 +212,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1065,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"view"
 				],
@@ -247,7 +247,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"search"
 				],
@@ -281,7 +281,7 @@
 				],
 				"isMulticolor": false,
 				"width": 899,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"delete"
 				],
@@ -314,7 +314,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"share"
 				],
@@ -347,7 +347,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"message"
 				],
@@ -381,7 +381,7 @@
 				],
 				"isMulticolor": false,
 				"width": 765,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"bell"
 				],
@@ -414,7 +414,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"lock"
 				],
@@ -448,7 +448,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1322,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"battery"
 				],
@@ -482,7 +482,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1092,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"camera"
 				],
@@ -516,7 +516,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1325,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"wifi"
 				],
@@ -550,7 +550,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1391,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"usb-drive"
 				],
@@ -584,7 +584,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1082,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"invitation"
 				],
@@ -618,7 +618,7 @@
 				],
 				"isMulticolor": false,
 				"width": 764,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"hdd"
 				],
@@ -652,7 +652,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1054,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"map-location"
 				],
@@ -686,7 +686,7 @@
 				],
 				"isMulticolor": false,
 				"width": 987,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"dial-up"
 				],
@@ -720,7 +720,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1267,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"incoming-call"
 				],
@@ -753,7 +753,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"clock"
 				],
@@ -787,7 +787,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1068,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"clean"
 				],
@@ -821,7 +821,7 @@
 				],
 				"isMulticolor": false,
 				"width": 639,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"sort"
 				],
@@ -859,7 +859,7 @@
 				],
 				"isMulticolor": false,
 				"width": 738,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"list-sort"
 				],
@@ -896,7 +896,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"sequence"
 				],
@@ -930,7 +930,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1147,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"rules"
 				],
@@ -963,7 +963,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"uri"
 				],
@@ -997,7 +997,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1045,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"pdf"
 				],
@@ -1030,7 +1030,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"ms-document"
 				],
@@ -1063,7 +1063,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"swagger"
 				],
@@ -1097,7 +1097,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1057,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"jquery"
 				],
@@ -1131,7 +1131,7 @@
 				],
 				"isMulticolor": false,
 				"width": 755,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"java"
 				],
@@ -1164,7 +1164,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"javaee"
 				],
@@ -1198,7 +1198,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1003,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"javascript"
 				],
@@ -1232,7 +1232,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1141,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"jaggery"
 				],
@@ -1266,7 +1266,7 @@
 				],
 				"isMulticolor": false,
 				"width": 780,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"uncheck"
 				],
@@ -1299,7 +1299,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"check"
 				],
@@ -1332,7 +1332,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"up-arrow"
 				],
@@ -1365,7 +1365,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"down-arrow"
 				],
@@ -1399,7 +1399,7 @@
 				],
 				"isMulticolor": false,
 				"width": 561,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"left-arrow"
 				],
@@ -1433,7 +1433,7 @@
 				],
 				"isMulticolor": false,
 				"width": 561,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"right-arrow"
 				],
@@ -1467,7 +1467,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1026,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"cancel"
 				],
@@ -1500,7 +1500,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"add"
 				],
@@ -1533,7 +1533,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"minus"
 				],
@@ -1567,7 +1567,7 @@
 				],
 				"isMulticolor": false,
 				"width": 924,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"refresh"
 				],
@@ -1600,7 +1600,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"ring"
 				],
@@ -1633,7 +1633,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"circle"
 				],
@@ -1666,7 +1666,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"ok"
 				],
@@ -1699,7 +1699,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"error"
 				],
@@ -1732,7 +1732,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"block"
 				],
@@ -1765,7 +1765,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"warning"
 				],
@@ -1798,7 +1798,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"devices"
 				],
@@ -1832,7 +1832,7 @@
 				],
 				"isMulticolor": false,
 				"width": 866,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"dss"
 				],
@@ -1865,7 +1865,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"endpoint"
 				],
@@ -1898,7 +1898,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"bpmn"
 				],
@@ -1931,7 +1931,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"bpel"
 				],
@@ -1964,7 +1964,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"gadget"
 				],
@@ -1997,7 +1997,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"application"
 				],
@@ -2031,7 +2031,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1209,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"cloud"
 				],
@@ -2065,7 +2065,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1038,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"service"
 				],
@@ -2098,7 +2098,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"rest-service"
 				],
@@ -2131,7 +2131,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"rest-api"
 				],
@@ -2164,7 +2164,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"api"
 				],
@@ -2197,7 +2197,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"service-provider"
 				],
@@ -2230,7 +2230,7 @@
 					{}
 				],
 				"isMulticolor": false,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"website"
 				],
@@ -2264,7 +2264,7 @@
 				],
 				"isMulticolor": false,
 				"width": 950,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"proxy"
 				],
@@ -2298,7 +2298,7 @@
 				],
 				"isMulticolor": false,
 				"width": 779,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"policy"
 				],
@@ -2332,7 +2332,7 @@
 				],
 				"isMulticolor": false,
 				"width": 825,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"security-policy"
 				],
@@ -2366,7 +2366,7 @@
 				],
 				"isMulticolor": false,
 				"width": 825,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"throttling-policy"
 				],
@@ -2400,7 +2400,7 @@
 				],
 				"isMulticolor": false,
 				"width": 779,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"blank-document"
 				],
@@ -2434,7 +2434,7 @@
 				],
 				"isMulticolor": false,
 				"width": 779,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"text"
 				],
@@ -2468,7 +2468,7 @@
 				],
 				"isMulticolor": false,
 				"width": 779,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"html"
 				],
@@ -2502,7 +2502,7 @@
 				],
 				"isMulticolor": false,
 				"width": 895,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"wadl"
 				],
@@ -2536,7 +2536,7 @@
 				],
 				"isMulticolor": false,
 				"width": 892,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"wsdl"
 				],
@@ -2570,7 +2570,7 @@
 				],
 				"isMulticolor": false,
 				"width": 895,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"xacml"
 				],
@@ -2604,7 +2604,7 @@
 				],
 				"isMulticolor": false,
 				"width": 895,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"xsd"
 				],
@@ -2638,7 +2638,7 @@
 				],
 				"isMulticolor": false,
 				"width": 895,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"xq"
 				],
@@ -2672,7 +2672,7 @@
 				],
 				"isMulticolor": false,
 				"width": 895,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"xslt"
 				],
@@ -2706,7 +2706,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1390,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"xml"
 				],
@@ -2740,7 +2740,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1121,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"soap"
 				],
@@ -2774,7 +2774,7 @@
 				],
 				"isMulticolor": false,
 				"width": 1525,
-				"grid": 0,
+				"grid": 16,
 				"tags": [
 					"wso2"
 				],
@@ -2801,7 +2801,7 @@
 	],
 	"height": 1024,
 	"metadata": {
-		"name": "wso2metro",
+		"name": "fontwso2",
 		"license": "Apache License, Version 2.0",
 		"licenseURL": "http://wso2.com/licenses"
 	},
@@ -2811,9 +2811,9 @@
 		"showQuickUse2": true,
 		"showSVGs": true,
 		"fontPref": {
-			"prefix": "wso2-",
+			"prefix": "fw-",
 			"metadata": {
-				"fontFamily": "wso2metro",
+				"fontFamily": "fontwso2",
 				"majorVersion": 1,
 				"minorVersion": 0,
 				"licenseURL": "http://wso2.com/licenses",
@@ -2826,12 +2826,12 @@
 				"baseline": 0,
 				"whitespace": 0
 			},
-			"showSelector": true,
+			"showSelector": false,
 			"selector": "class",
-			"classSelector": ".wso2icon",
+			"classSelector": ".fw",
 			"showVersion": true,
 			"autoHost": true,
-			"showMetrics": true,
+			"showMetrics": false,
 			"showMetadata": false,
 			"resetPoint": 58880,
 			"includeMetadata": false
@@ -2850,7 +2850,7 @@
 			"WSO2MetroIcons": "YzhiZTVjNzJlNjIwNWRiZmE3OTU5ZjQ1ZTNlMzExYWIjMSMxNDI2ODMyNDUyIyMj"
 		},
 		"gridSize": 16,
-		"showGrid": false,
+		"showGrid": true,
 		"fontHostingName": false
 	}
 }

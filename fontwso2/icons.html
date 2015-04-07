@@ -29,9 +29,9 @@
   <body>
 
   <div class="code-box">
-      <span class="wso2icon-stack code-hide-btn" onclick="hideCode()">
-         <i class="wso2icon wso2-ring wso2icon-stack-2x"></i>
-         <i class="wso2icon wso2-cancel wso2icon-stack-1x"></i>
+      <span class="fw-stack code-hide-btn" onclick="hideCode()">
+         <i class="fw fw-ring fw-stack-2x"></i>
+         <i class="fw fw-cancel fw-stack-1x"></i>
       </span>
       <h3>HTML</h3>
       <h4>
@@ -63,7 +63,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Font <i class="wso2icon wso2-wso2 wso2icon-inverse wso2icon-2x"></i></a>
+          <a class="navbar-brand" href="index.html">Font <i class="fw fw-wso2 fw-inverse fw-2x"></i></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -76,7 +76,7 @@
 
 	<div class="container mt">
 		<div class="row mt centered">
-            <h1 id="title">WSO2 Metro Bootstrap Icons</h1>
+            <h1 id="title">WSO2 Bootstrap Icons - All</h1>
 		</div><!-- /row -->
         <div class="row icons-list" id="icons"><!-- dynamic content loads here--></div>
 	</div><! --/container -->
@@ -99,18 +99,18 @@
 
             $.each(icons, function(key, val) {
                 items.push( "<li onclick='showCode(this)' data-icon='" + icons[key].properties.name + "'>" +
-                "<i class='wso2icon wso2-" + icons[key].properties.name + "'></i>" +
-                " wso2-" + icons[key].properties.name +
+                "<i class='fw fw-" + icons[key].properties.name + "'></i>" +
+                icons[key].properties.name +
                 "<span class='get-code'>" +
-                "<i class='wso2icon wso2-left-arrow'></i>" +
+                "<i class='fw fw-left-arrow'></i>" +
                 "Code" +
-                "<i class='wso2icon wso2-right-arrow'></i>" +
+                "<i class='fw fw-right-arrow'></i>" +
                 "</span>" +
                 "</li>" );
             });
 
             $( "<ul/>", {
-                "class": "wso2metro",
+                "class": "fontwso2",
                 html: items.join("")
             }).appendTo("#icons");
 
@@ -126,7 +126,7 @@
             $("#html").text(i.outerHTML);
             $("#css").text(function(){
                 var name = $(elem).attr("data-icon"),
-                    css = ".wso2-" + name + ":before {\n    content: '" + iContentHTML + "';\n}";
+                    css = ".fw-" + name + ":before {\n    content: '" + iContentHTML + "';\n}";
 
                 return css;
             });

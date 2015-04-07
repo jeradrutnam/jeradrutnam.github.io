@@ -261,7 +261,7 @@ a:after {
 /* Helpers */
 
 .mt {
-	padding: 40px 0;
+	padding: 40px 15px;
 }
 
 .form-control {
@@ -275,7 +275,7 @@ i {
 	color: #3498db; 
 }
 
-i.wso2icon {
+i.fw {
     margin: 0;
 }
 
@@ -318,7 +318,7 @@ i.wso2icon {
     text-align: right;
 }
 
-#headerwrap .sample-icon .wso2icon {
+#headerwrap .sample-icon .fw {
     font-size: 22em;
     color: #ffffff;
 }
@@ -329,6 +329,11 @@ i.wso2icon {
 	font-size: 60px;
 	font-weight: 300;
 	letter-spacing: 1px;
+}
+
+.icons-list ul {
+    padding: 0 10px;
+    margin: 0;
 }
 
 .icons-list ul:after {
@@ -345,10 +350,10 @@ i.wso2icon {
     font-size: 20px;
     cursor: pointer;
 }
-.icons-list ul li i.wso2icon {
+.icons-list ul li i.fw {
     margin-right: 10px;
     text-align: center;
-    width: 20px;
+    width: 40px;
     color: #333;
     vertical-align: middle;
     padding-bottom: 3px;
@@ -365,18 +370,18 @@ i.wso2icon {
     text-transform: uppercase;
 }
 
-.icons-list .get-code i.wso2icon {
+.icons-list .get-code i.fw {
     width: auto;
     margin: 0 2px;
 }
 
-.options .wso2icon {
+.options .fw {
     color: #333;
     margin-right: 5px;
     vertical-align: middle;
 }
 
-.options .wso2icon.wso2icon-spin {
+.options .fw.fw-spin {
     margin-right: 8px;
     margin-bottom: 8px;
 }
@@ -418,11 +423,11 @@ i.wso2icon {
     cursor: pointer;
 }
 
-.code-box .code-hide-btn .wso2-ring {
+.code-box .code-hide-btn .fw-ring {
     display: none;
 }
 
-.code-box .code-hide-btn:hover .wso2-ring {
+.code-box .code-hide-btn:hover .fw-ring {
     display: inline-block;
 }
 
@@ -434,4 +439,15 @@ i.wso2icon {
     background: #000000;
     opacity: 0.7;
     display: none;
+}
+
+pre code {
+    white-space: pre-wrap;
+}
+pre code .fw {
+	font-family: monospace;
+}
+
+pre code .fw:before {
+	content: none;
 }
