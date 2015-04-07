@@ -279,6 +279,9 @@ i.fw {
     margin: 0;
 }
 
+i.fw-border {
+    border-color: #dedede;
+}
 
 /* HeaderWrap */
 #headerwrap {
