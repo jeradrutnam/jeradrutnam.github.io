@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Most Commonly Use Git Commands</title>
+    
+    <meta name="description" content="Git Clonegit clone &lt;repo&gt; (clone repo)git status (Check which branch you are working on)Git Create &amp; Push Branchgit checkout -b &lt;branch-name&gt;...">
+    
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font-Awesome -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
+    
+    <!-- Custom -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body>
+
+    
+
+    <div class="page-content">
+      <div class="wrapper">
+        <!-- Post Section -->
+<div class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+                    
+                  <div class="title-page">
+                      <h2 class="title" itemprop="name headline">Most Commonly Use Git Commands</h2>
+                      <h3 class="title-description"><time datetime="2016-07-04T10:45:29+05:30" itemprop="datePublished">Jul 4, 2016</time></h3>
+                  </div>
+
+                  <div class="post-content" itemprop="articleBody">
+                    <h3 id="git-clone">Git Clone</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone &lt;repo&gt; (clone repo)
+git status (Check which branch you are working on)
+</code></pre>
+</div>
+
+<h3 id="git-create--push-branch">Git Create &amp; Push Branch</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout -b &lt;branch-name&gt; (create local branch)
+git push &lt;remote-name&gt; &lt;branch-name&gt; (push branch to git, &lt;remote-name&gt; = "origin")
+git add --all (add changes to clone)
+git commit -m "string message" (commit changes)
+</code></pre>
+</div>
+
+<h3 id="git-rename-branch">Git Rename Branch</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch -m my-hot-feature feature-15 (rename branch localy)
+git remote -v (get remote name)
+git push origin :&lt;old_branch_name&gt; (Delete the remote branch with the old name)
+git push origin &lt;new_branch_name&gt; (Re-create the remote branch with the new name)
+</code></pre>
+</div>
+
+<h3 id="git-delete-branch">Git Delete Branch</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch -d &lt;branchName&gt; (delete branch localy, -D for force delete)
+git push origin --delete &lt;branchName&gt; (delete remote branch)
+</code></pre>
+</div>
+
+<h3 id="git-pull">Git Pull</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master (Change branch to master)
+git pull (Pull the changes)
+git checkout &lt;branch_name&gt; (Change branch)
+</code></pre>
+</div>
+
+<h3 id="git-push">Git Push</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master (Change branch to master)
+git pull (Pull the changes)
+git checkout &lt;branch_name&gt; (Change branch)
+git add --all (add changes to staging)
+git commit -m "string message" (commit changes to local)
+git push (push commits to repo)
+</code></pre>
+</div>
+
+<h3 id="configuring-a-git-remote-for-a-fork---set-upstream">Configuring a Git remote for a fork - Set UPSTREAM</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git remote -v (Checking remote repos)
+git remote add upstream &lt;https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git&gt; (Adding upstream [original repo] to git remote)
+git remote -v (Checking remote repos again to see whether its updated)
+</code></pre>
+</div>
+
+<h3 id="git-fetch-from-upstream">Git fetch from Upstream</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git fetch upstream (git fetch from upstream)
+git checkout master (change to local 'master' banrch)
+git merge upstream/master (merge local with fetched upstream changes)
+</code></pre>
+</div>
+
+<h3 id="git-force-merge-local-from-branch">Git force merge local from branch</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git fetch --all
+git reset --hard upstream/master
+git push origin master
+</code></pre>
+</div>
+
+<h3 id="git-force-pull">Git force pull</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git fetch origin master
+git reset --hard FETCH_HEAD
+git clean -df
+</code></pre>
+</div>
+
+<h3 id="git-force-revet-to-a-previous-commit">Git force revet to a previous commit</h3>
+<hr />
+<div class="highlighter-rouge"><pre class="highlight"><code>git reset --hard &lt;revision_id_of_last_known_good_commit&gt;
+git push --force
+</code></pre>
+</div>
+
+
+                  </div>
+
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Post Section -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+<footer id="footer">
+    <p class="credits">&copy; 2016 <a href="http://www.jeradrutnam.com/" title="Jerad Rutnam">JERAD RUTNAM ™</a></p>
+</footer>
+<!-- End Footer -->
+
+  </body>
+
+</html>
