@@ -1,0 +1,7 @@
+# Site settings
+title: Jerad Rutnam
+email: jeradrutnam@outlook.com
+url: "http://jeradrutnam.com"
+
+# Build settings
+markdown: kramdown
