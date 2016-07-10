@@ -5,6 +5,7 @@ date:   2016-07-04 10:45:29 +0530
 categories: CSS
 ---
 
+Here is a list of Git commands that you should remember that will use more commonly.
 
 ### Git Clone
 
