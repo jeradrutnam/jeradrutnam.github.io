@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
-
-  <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Blog</title>
     
     <meta name="description" content="">
     
@@ -33,19 +31,28 @@
     <![endif]-->
 </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#menu">
 
-    
+    <div class="control-nav">
+    <nav id="menu">
+        <ul id="menu-nav" class="nav">
+            <li><a href="/blog">Blog</a></li>
+            <li class="hidden"><a href="#about">Who I Am</a></li>
+            <li class="hidden"><a href="#experience">Experience</a></li>
+            <li class="hidden"><a href="#skills">Skills</a></li>
+            <li class="hidden"><a href="#work">Showcase</a></li>
+            <li class="hidden"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
 
-    <div class="page-content">
-      <div class="wrapper">
-        <!-- Blog Section -->
+    <!-- Blog Section -->
 <div id="blog" class="page">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="title-page">
-                    <h2 class="title">Blog Posts</h2>
+                    <h2 class="title">Articles</h2>
                     <h3 class="title-description"></h3>
                 </div>
 
@@ -53,10 +60,12 @@
                     
                       <li>
                         <span class="post-meta">Jul 4, 2016</span>
-
-                        <h2>
-                          <a class="post-link" href="/css/2016/07/04/most-commonly-use-git-commands.html">Most Commonly Use Git Commands</a>
-                        </h2>
+                        <p><a class="post-link" href="/css/2016/07/04/most-commonly-use-git-commands.html">Most Commonly Use Git Commands</a></p>
+                      </li>
+                    
+                      <li>
+                        <span class="post-meta">Sep 27, 2014</span>
+                        <p><a class="post-link" href="/2014/09/27/membuat-screenshoot-aplikasi-error-tanpa-photoshop.html">Membuat Screenshoot Aplikasi Error Nyeleneh Tanpa Photoshop</a></p>
                       </li>
                     
                 </ul>
@@ -65,15 +74,52 @@
     </div>
 </div>
 <!-- End Blog Section -->
-      </div>
-    </div>
 
+
+
+
+<!-- Blog Section -->
+<div id="blog" class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-page">
+                    <h2 class="title">Articles</h2>
+                    <h3 class="title-description"></h3>
+                </div>
+
+                <ul class="post-list">
+                    
+                </ul>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog Section -->
+    
     <!-- Footer -->
 <footer id="footer">
     <p class="credits">&copy; 2016 <a href="http://www.jeradrutnam.com/" title="Jerad Rutnam">JERAD RUTNAM ™</a></p>
 </footer>
 <!-- End Footer -->
 
-  </body>
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+    <i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
 
+<ul id="supersized" class="quality" style="visibility: visible;">
+    <li><img src="images/bg.jpg" style="width: auto; height: 100%;"></li>
+</ul>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+  </body>
 </html>

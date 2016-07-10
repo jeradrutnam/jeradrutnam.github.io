@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
-
-  <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Most Commonly Use Git Commands</title>
     
-    <meta name="description" content="Git Clonegit clone &lt;repo&gt; (clone repo)git status (Check which branch you are working on)Git Create &amp; Push Branchgit checkout -b &lt;branch-name&gt;...">
+    <meta name="description" content="Git Clone">
     
     <link rel="shortcut icon" href="/images/favicon.png" />
     
@@ -22,6 +20,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
     
+    <!-- Pygments CSS: Zenburn -->
+    <link rel="stylesheet" href="/css/zenburn.css">
+    
     <!-- Custom -->
     <link rel="stylesheet" href="/css/custom.css">
 
@@ -33,13 +34,23 @@
     <![endif]-->
 </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#menu">
 
-    
+    <div class="control-nav">
+    <nav id="menu">
+        <ul id="menu-nav" class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li class="hidden"><a href="#about">Who I Am</a></li>
+            <li class="hidden"><a href="#experience">Experience</a></li>
+            <li class="hidden"><a href="#skills">Skills</a></li>
+            <li class="hidden"><a href="#work">Showcase</a></li>
+            <li class="hidden"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
 
-    <div class="page-content">
-      <div class="wrapper">
-        <!-- Post Section -->
+    <!-- Post Section -->
 <div class="page">
     <div class="container">
         <div class="row">
@@ -54,94 +65,72 @@
 
                   <div class="post-content" itemprop="articleBody">
                     <h3 id="git-clone">Git Clone</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone &lt;repo&gt; (clone repo)
-git status (Check which branch you are working on)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git clone &lt;repo&gt; <span class="c"># Clone repo</span>
+git status <span class="c"># Check which branch you are working on</span></code></pre></figure>
 
 <h3 id="git-create--push-branch">Git Create &amp; Push Branch</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git checkout -b &lt;branch-name&gt; (create local branch)
-git push &lt;remote-name&gt; &lt;branch-name&gt; (push branch to git, &lt;remote-name&gt; = "origin")
-git add --all (add changes to clone)
-git commit -m "string message" (commit changes)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git checkout -b &lt;branch_name&gt; <span class="c"># Create local branch</span>
+git push &lt;remote_name&gt; &lt;branch_name&gt; <span class="c"># Push branch to git, &lt;remote-name&gt; = "origin"</span>
+git add --all <span class="c"># Add changes to clone</span>
+git commit -m <span class="s2">"string message"</span> <span class="c"># Commit changes</span></code></pre></figure>
 
 <h3 id="git-rename-branch">Git Rename Branch</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git branch -m my-hot-feature feature-15 (rename branch localy)
-git remote -v (get remote name)
-git push origin :&lt;old_branch_name&gt; (Delete the remote branch with the old name)
-git push origin &lt;new_branch_name&gt; (Re-create the remote branch with the new name)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git branch -m my-hot-feature feature-15 <span class="c"># Rename branch localy</span>
+git remote -v <span class="c"># Get remote name</span>
+git push origin :&lt;old_branch_name&gt; <span class="c"># Delete the remote branch with the old name</span>
+git push origin &lt;new_branch_name&gt; <span class="c"># Re-create the remote branch with the new name</span></code></pre></figure>
 
 <h3 id="git-delete-branch">Git Delete Branch</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git branch -d &lt;branchName&gt; (delete branch localy, -D for force delete)
-git push origin --delete &lt;branchName&gt; (delete remote branch)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git branch -d &lt;branch_name&gt; <span class="c"># Delete branch localy, -D for force delete</span>
+git push origin --delete &lt;branch_name&gt; <span class="c"># Delete remote branch</span></code></pre></figure>
 
 <h3 id="git-pull">Git Pull</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master (Change branch to master)
-git pull (Pull the changes)
-git checkout &lt;branch_name&gt; (Change branch)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git checkout master <span class="c"># Change branch to master</span>
+git pull <span class="c"># Pull the changes</span>
+git checkout &lt;branch_name&gt; <span class="c"># Change branch</span></code></pre></figure>
 
 <h3 id="git-push">Git Push</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master (Change branch to master)
-git pull (Pull the changes)
-git checkout &lt;branch_name&gt; (Change branch)
-git add --all (add changes to staging)
-git commit -m "string message" (commit changes to local)
-git push (push commits to repo)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git checkout master <span class="c"># Change branch to master</span>
+git pull <span class="c"># Pull the changes</span>
+git checkout &lt;branch_name&gt; <span class="c"># Change branch</span>
+git add --all <span class="c"># Add changes to staging</span>
+git commit -m <span class="s2">"string message"</span> <span class="c"># Commit changes to local</span>
+git push <span class="c"># Push commits to repo</span></code></pre></figure>
 
 <h3 id="configuring-a-git-remote-for-a-fork---set-upstream">Configuring a Git remote for a fork - Set UPSTREAM</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git remote -v (Checking remote repos)
-git remote add upstream &lt;https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git&gt; (Adding upstream [original repo] to git remote)
-git remote -v (Checking remote repos again to see whether its updated)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git remote -v <span class="c"># Checking remote repos</span>
+git remote add upstream &lt;https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git&gt; <span class="c"># Adding upstream [original repo] to git remote</span>
+git remote -v <span class="c"># Checking remote repos again to see whether its updated</span></code></pre></figure>
 
 <h3 id="git-fetch-from-upstream">Git fetch from Upstream</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git fetch upstream (git fetch from upstream)
-git checkout master (change to local 'master' banrch)
-git merge upstream/master (merge local with fetched upstream changes)
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git fetch upstream <span class="c"># Git fetch from upstream</span>
+git checkout master <span class="c"># Change to local 'master' banrch</span>
+git merge upstream/master <span class="c"># Merge local with fetched upstream changes</span></code></pre></figure>
 
 <h3 id="git-force-merge-local-from-branch">Git force merge local from branch</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git fetch --all
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git fetch --all
 git reset --hard upstream/master
-git push origin master
-</code></pre>
-</div>
+git push origin master</code></pre></figure>
 
 <h3 id="git-force-pull">Git force pull</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git fetch origin master
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git fetch origin master
 git reset --hard FETCH_HEAD
-git clean -df
-</code></pre>
-</div>
+git clean -df</code></pre></figure>
 
 <h3 id="git-force-revet-to-a-previous-commit">Git force revet to a previous commit</h3>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>git reset --hard &lt;revision_id_of_last_known_good_commit&gt;
-git push --force
-</code></pre>
-</div>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git reset --hard &lt;revision_id_of_last_known_good_commit&gt;
+git push --force</code></pre></figure>
 
 
                   </div>
@@ -152,15 +141,24 @@ git push --force
     </div>
 </div>
 <!-- End Post Section -->
-      </div>
-    </div>
-
+    
     <!-- Footer -->
 <footer id="footer">
     <p class="credits">&copy; 2016 <a href="http://www.jeradrutnam.com/" title="Jerad Rutnam">JERAD RUTNAM ™</a></p>
 </footer>
 <!-- End Footer -->
 
-  </body>
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+    <i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/custom.js"></script>
+
+  </body>
 </html>

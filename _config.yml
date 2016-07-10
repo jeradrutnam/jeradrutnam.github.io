@@ -4,4 +4,11 @@ email: jeradrutnam@outlook.com
 url: "http://jeradrutnam.com"
 
 # Build settings
+baseurl: ""
 markdown: kramdown
+
+gems:
+  - jekyll-paginate
+    
+paginate: 5
+paginate_path: "/blog/page:num/"

@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog
+---
+
+<!-- Blog Section -->
+<div id="blog" class="page first-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-page">
+                    <h2 class="title">Articles</h2>
+                    <h3 class="title-description"></h3>
+                </div>
+
+                <ul class="post-list">
+                    {% for post in paginator.posts %}
+                    <li>
+                        <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+                        <div class="description">
+                            {% if post.description %}
+                                {{ post.description | strip_html | strip_newlines | truncate: 250 }}
+                            {% else %}
+                                {{ post.content | strip_html | strip_newlines | truncate: 250 }}
+                            {% endif %}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                
+                {% if paginator.total_pages > 1 %}<!-- Pagination links -->
+                <div class="pagination clearfix">
+                    {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev pull-left">Newer Posts</a> {% endif %}
+                    {% if paginator.next_page %} <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next pull-right">Older Posts</a>{% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog Section -->
