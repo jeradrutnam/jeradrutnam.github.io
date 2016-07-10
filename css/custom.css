@@ -245,6 +245,7 @@ nav#menu #menu-nav li a:focus {
 	font-size: 48px;
 	margin: 0 0 10px 0;
     color: #eaeaea;
+    text-transform: uppercase;
 }
 
 .title-page .title-description {
