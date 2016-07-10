@@ -400,3 +400,33 @@ footer .credits {
     color: #7d7d7d;
     margin-bottom: 20px;
 }
+
+
+/* ==================================================
+   Tag Styles
+================================================== */
+
+.tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.tag-list li {
+    display: inline-block;
+    background: #3b3b3b;
+    margin: 2px;
+}
+
+.tag-list li a {
+    padding: 6px 8px;
+    color: #eaeaea;
+}
+
+.tag-list li:first-child {
+    margin-left: 0;
+}
+
+.tag-list li:last-child {
+    margin-right: 0;
+}

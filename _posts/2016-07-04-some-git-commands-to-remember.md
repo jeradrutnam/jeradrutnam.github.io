@@ -1,8 +1,14 @@
 ---
 layout: post
-title:  Most Commonly Use Git Commands
+title:  Some git commands to remember
 date:   2016-07-04 10:45:29 +0530
+modified_time: 2016-07-10 10:49:29 +0530
 categories: CSS
+tags:
+- Git
+- GitHub
+- Command
+- Console
 ---
 
 Here is a list of Git commands that you should remember that will use more commonly.

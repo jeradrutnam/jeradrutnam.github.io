@@ -13,10 +13,10 @@ title: Home
             <li data-toggle="tooltip" data-position="top" title="Stack Overflow"><a href="http://stackoverflow.com/users/1131986/jerad-rutnam" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
         </ul>
 
-        <div class="control-nav hidden">
+        <div class="control-nav">
             <nav id="menu">
                 <ul id="menu-nav" class="nav">
-                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li class="hidden"><a href="#about">Who I Am</a></li>
                     <li class="hidden"><a href="#experience">Experience</a></li>
                     <li class="hidden"><a href="#skills">Skills</a></li>
@@ -29,14 +29,39 @@ title: Home
     </div>
     
     <!-- Blog Section -->
-    <div id="blog" class="page hidden">
+    <div id="blog" class="page">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-page">
-                        <h2 class="title">Blog</h2>
+                        <h2 class="title">BLOG</h2>
                         <h3 class="title-description"></h3>
                     </div>
+
+                    <ul class="post-list">
+                        {% for post in site.posts %}
+                        <li>
+                            <h2>
+                                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </h2>
+                            <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+                            <div class="description">
+                                {% if post.description %}
+                                    {{ post.description | strip_html | strip_newlines | truncate: 250 }}
+                                {% else %}
+                                    {{ post.content | strip_html | strip_newlines | truncate: 250 }}
+                                {% endif %}
+                            </div>
+                            <div>
+                                <ul class="tag-list">
+                                    {% for tag in post.tags %}
+                                        <li><a class="tag_list_link" href="/tag/{.{ tag }}">{{ tag }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
