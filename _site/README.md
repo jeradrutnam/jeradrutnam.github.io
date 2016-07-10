@@ -1,1 +1,0 @@
-# Jerad Rutnam | www.jeradrutnam.com
