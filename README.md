@@ -2,5 +2,5 @@
 
 **Contact:**
 
-*   https://lk.linkedin.com/in/jeradrutnam on LinkedIn
-*   jeradrutnam@outlook.com
+*   LinkedIn: https://lk.linkedin.com/in/jeradrutnam
+*   Email: [jeradrutnam@outlook.com](mailto:jeradrutnam@outlook.com)
