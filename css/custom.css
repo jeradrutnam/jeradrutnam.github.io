@@ -394,11 +394,16 @@ footer .credits {
 
 .post-list {
     list-style: none;
+    padding: 0;
 }
 
 .post-list .post-meta {
     color: #7d7d7d;
     margin-bottom: 20px;
+}
+
+.post-list-view-all-link {
+    margin-top: 40px;
 }
 
 

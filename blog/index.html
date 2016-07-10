@@ -3,6 +3,8 @@ layout: default
 title: Blog
 ---
 
+{% include header.html %}
+
 <!-- Blog Section -->
 <div id="blog" class="page first-section">
     <div class="container">
@@ -22,9 +24,9 @@ title: Blog
                         <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
                         <div class="description">
                             {% if post.description %}
-                                {{ post.description | strip_html | strip_newlines | truncate: 250 }}
+                                {{ post.description | strip_html | strip_newlines | truncate: 800 }}
                             {% else %}
-                                {{ post.content | strip_html | strip_newlines | truncate: 250 }}
+                                {{ post.content | strip_html | strip_newlines | truncate: 800 }}
                             {% endif %}
                         </div>
                         <div>
