@@ -58,6 +58,10 @@ a:hover {
     text-align: center;
 }
 
+#supersized li img {
+    margin: 0 -100%;
+}
+
 .first-section {
     position: relative;
     overflow: hidden;
@@ -435,4 +439,102 @@ footer .credits {
 
 .tag-list li:last-child {
     margin-right: 0;
+}
+
+/* ==================================================
+   Form Styles
+================================================== */
+
+.contact-details h3 {
+	color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+	line-height: 1em;
+    text-transform: uppercase;
+}
+
+.contact-details ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;	
+}
+
+.contact-details ul li {
+	margin: 0 0 20px;
+	line-height: 28px;
+	padding: 0;	
+}
+
+.form {
+	margin-bottom: 0;	
+}
+
+.form p {
+	margin-bottom: 4px;	
+}
+
+.form input,
+.form textarea {
+    border: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+    border-radius: 0;
+	
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	
+	background: #212221;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+	margin: 0;
+	
+    resize: none;
+}
+
+.form input {
+    width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form textarea {
+    width: 100%;
+	resize: vertical;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .submit {
+    background: #343434;
+    color:#ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+	margin-top: 30px;
+	
+	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;	
+	   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+		 -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+		    transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+.form .submit:hover {
+    background: #d39000;
+    color: #FFFFFF;
+}
+
+#response {
+	margin-top: 20px;
+	color: #FFFFFF;
 }

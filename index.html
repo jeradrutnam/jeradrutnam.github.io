@@ -393,6 +393,67 @@ title: Home
     </div>
     <!-- End Work Section -->
 
+    <!-- Contact Section -->
+    <div id="contact" class="page-alternate hidden">
+        <div class="container">
+            <!-- Title Page -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-page">
+                        <h2 class="title">Contact</h2>
+                        <h3 class="title-description">Want to contact me? Just drop me a message, I will reach you back soon.</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title Page -->
+
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="col-md-9">
+
+                    <form id="contact-form" class="form" action="http://formspree.io/jeradrutnam@outlook.com" method="post">
+                        
+            
+                        <input type="hidden" name="_subject" value="jeradrutnam.com" />
+                        
+                        <p class="contact-name">
+                            <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                        </p>
+                        <p class="contact-email">
+                            <input id="contact_email" type="text" placeholder="Email Address" value="" name="_replyto" />
+                        </p>
+                        <p class="contact-message">
+                            <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                        </p>
+                        <p class="contact-submit">
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="submit" id="contact-submit" class="submit" value="Send Your Email" />
+                        </p>
+
+                        <div id="response">
+
+                        </div>
+                        
+                    </form>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="contact-details">
+                        <h3>Contact Details</h3>
+                        <ul>
+                            <li><a href="mailto:jeradrutnam@outlook.com">jeradrutnam@outlook.com</a></li>
+                            <li>( +94 ) 77 959 1609</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact Form -->
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+
     <ul id="supersized" class="quality" style="visibility: visible;">
         <li><img src="{{ "/images/bg.jpg" | prepend: site.baseurl }}" style="width: auto; height: 100%;"></li>
     </ul>
