@@ -23,6 +23,14 @@ layout: default
 
                 </article>
             </div>
+            
+            <div class="col-md-12">
+                {% if page.comments %}
+                <hr/>
+                <h2>Comments</h2>
+                <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-num-posts="4" data-width="100%"></div>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

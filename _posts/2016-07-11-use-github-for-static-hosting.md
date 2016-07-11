@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Use GitHub for Static Hosting
+comments: yes
 date:   2016-07-11 11:00:29 +0530
 modified_time: 
 categories: Git
