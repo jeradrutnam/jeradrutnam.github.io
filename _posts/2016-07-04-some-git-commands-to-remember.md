@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Some git commands to remember
-comments: no
+comments: yess
 date:   2016-07-04 10:45:29 +0530
 modified_time: 2016-07-10 10:49:29 +0530
 categories: Git
