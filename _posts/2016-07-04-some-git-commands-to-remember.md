@@ -3,13 +3,15 @@ layout: post
 title:  Some git commands to remember
 date:   2016-07-04 10:45:29 +0530
 modified_time: 2016-07-10 10:49:29 +0530
-categories: CSS
+categories: Git
 tags:
 - Git
 - GitHub
 - Command
 - Console
 ---
+
+![GitHub Banner](/images/post/github-banner.png)
 
 Here is a list of Git commands that you should remember that will use more commonly.
 
