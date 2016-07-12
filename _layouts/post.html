@@ -9,24 +9,32 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                
                 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
                     
-                  <div class="title-page">
-                      <h2 class="title" itemprop="name headline">{{ page.title }}</h2>
-                      <h3 class="title-description"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h3>
-                  </div>
+                    <div class="title-page">
+                        <h2 class="title" itemprop="name headline">{{ page.title }}</h2>
+                        <h3 class="title-description">by <span class="text-uppercase">{{ site.title }}</span> - <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h3>
+                    </div>
 
-                  <div class="post-content" itemprop="articleBody">
-                    {{ content }}
-                  </div>
+                    <div class="post-content" itemprop="articleBody">
+                        {{ content }}
+                    </div>
 
                 </article>
             </div>
             
+            <div class="col-md-12 post-footer clearfix">
+                <div class="pull-left clearfix">
+                    <img src="/images/thumb.jpg" class="img-circle user-img pull-left" alt="Jerad Rutnam">
+                    <div class="pull-left description">
+                        <h3 class="title text-uppercase">{{ site.title }}</h3>
+                        <h4 class="title-description">{{ site.description }}</h4>
+                    </div>
+                </div>
+            </div>
+            
             {% if page.comments %}
             <div class="col-md-12">
-                <br><br><br>
                 <hr/>
                 <h2>Comments</h2>
                 <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="100%"></div>

@@ -1,4 +1,4 @@
-* {
+*:not(.img-circle) {
     outline: none !important;
     border-radius: 0 !important;
 }
@@ -370,6 +370,31 @@ nav#menu #menu-nav li a:focus {
 
 .post-content {
     font-size: 18px;
+}
+
+.post-footer {
+    margin: 60px 0;
+}
+
+.post-footer .user-img {
+    height: 60px;
+    border: 3px solid #d6d6d6; 
+}
+
+.post-footer .description {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.post-footer .title {
+    margin: 0;
+    font-weight: 100;
+}
+
+.post-footer .title-description {
+    margin: 0;
+    font-weight: 100;
+    color: #737373;
 }
 
 /* ==================================================

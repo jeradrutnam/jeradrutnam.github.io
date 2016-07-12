@@ -12,7 +12,7 @@ tags:
 - Console
 ---
 
-![GitHub Banner](/images/post/github-banner.png)
+<img src="/images/post/github-banner.png" class="img-responsive" />
 
 Here is a list of Git commands that you should remember that will use more commonly.
 
