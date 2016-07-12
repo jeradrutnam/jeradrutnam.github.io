@@ -58,8 +58,21 @@ a:hover {
     text-align: center;
 }
 
-#supersized li img {
+#supersized li img.bg {
     margin: 0 -100%;
+    width: auto;
+    height: 100%;
+}
+
+#supersized li img.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 12%;
+    z-index: 10000;
 }
 
 .first-section {
