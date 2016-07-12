@@ -23,19 +23,18 @@ layout: default
                 </article>
             </div>
             
-            <div class="col-md-12 post-footer clearfix">
-                <div class="pull-left clearfix">
+            <div class="col-md-12">
+                <div class="post-footer clearfix">
                     <img src="/images/thumb.jpg" class="img-circle user-img pull-left" alt="Jerad Rutnam">
                     <div class="pull-left description">
                         <h3 class="title text-uppercase">{{ site.title }}</h3>
-                        <h4 class="title-description">{{ site.description }}</h4>
+                        <h4 class="title-description">{{ site.description }} &nbsp;|&nbsp; <a href="https://lk.linkedin.com/in/jeradrutnam" target="_blank"><i class="fa fa-linkedin"></i></a></h4>
                     </div>
                 </div>
             </div>
             
             {% if page.comments %}
             <div class="col-md-12">
-                <hr/>
                 <h2>Comments</h2>
                 <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="100%"></div>
             </div>

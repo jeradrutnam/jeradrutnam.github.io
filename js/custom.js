@@ -1,6 +1,6 @@
 $(function(){
     
-    var mainNav = '.control-nav',
+    var mainNav = '#home-nav',
         mainNavOffset = function(){
             return $(window).height() - $(mainNav).height();
         };
