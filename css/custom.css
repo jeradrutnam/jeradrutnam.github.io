@@ -420,6 +420,14 @@ figure {
     color: #737373;
 }
 
+.cloud-tags > .title {
+    margin-top: 0;
+}
+
+.cloud-tags > .tag {
+    margin: 2px;
+}
+
 /* ==================================================
    Footer
 ================================================== */
@@ -590,4 +598,9 @@ footer .credits {
 
 .fb_iframe_widget iframe {
     margin-top: 20px;
+}
+
+code {
+    background: transparent;
+    color: #d39000;
 }
