@@ -1,8 +1,42 @@
-.highlight code, .highlight pre {
-color:#fdce93;
-background-color:#3f3f3f;
+.highlight code,
+.highlight pre {
+    color: #dddddd;
+    background-color: #1D1F21;
 }
 
+.highlight .c,
+.highlight .c1,
+.highlight .cp {
+    color: #636363;
+}
+
+.highlight .nt,
+.highlight .kd {
+    color: #6c9ef8;
+}
+
+.highlight .s,
+.highlight .s2 {
+    color: #d89333;
+}
+
+.highlight .na,
+.highlight .nx {
+    color: #b77fdb;
+}
+
+.highlight .p {
+    color: #dddddd;
+}
+
+.highlight .kc {
+    color: #15a5a5;
+}
+
+
+
+
+/*
 .highlight .hll {
 background-color:#222;
 }
@@ -14,10 +48,6 @@ background-color:#3d3535;
 
 .highlight .k {
 color:#f0dfaf;
-}
-
-.highlight .p {
-color:#41706f;
 }
 
 .highlight .cs {
@@ -56,14 +86,6 @@ font-weight:700;
 color:#0040D0;
 }
 
-.highlight .kc {
-color:#dca3a3;
-}
-
-.highlight .kd {
-color:#ffff86;
-}
-
 .highlight .kn {
 color:#dfaf8f;
 font-weight:700;
@@ -93,7 +115,9 @@ color:#8fbede;
 .highlight .vi {
 color:#ffffc7;
 }
+*/
 
+/*
 .highlight .c,.preview-zenburn .highlight .g,.preview-zenburn .highlight .cm,.preview-zenburn .highlight .cp,.preview-zenburn .highlight .c1 {
 color:#7f9f7f;
 }
@@ -133,4 +157,4 @@ color:#9ac39f;
 
 .highlight .nb,.preview-zenburn .highlight .nc,.preview-zenburn .highlight .nf,.preview-zenburn .highlight .bp,.preview-zenburn .highlight .vc {
 color:#efef8f;
-}
+}*/
