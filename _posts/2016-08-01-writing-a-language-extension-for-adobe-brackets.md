@@ -145,6 +145,6 @@ desktop/sample.xhbs
 <br>
 
 And you are Done. Langauge extension should detect as below, Now you can play more with RegEx and [CodeMirror defineSimpleMode](https://codemirror.net/demo/simplemode.html){:target="_blank"} 
-API options to achieve required code highlightings. Furthermore you can read [CodeMirror defineMode](https://codemirror.net/doc/manual.html#modeapi){:target="_blank"} API for more advanve use cases.
+API options to achieve required code highlightings. Furthermore you can read [CodeMirror defineMode](https://codemirror.net/doc/manual.html#modeapi){:target="_blank"} API for more advance use cases.
 
 <img src="/images/post/brackets_custom_language_extension.png" class="img-responsive">
