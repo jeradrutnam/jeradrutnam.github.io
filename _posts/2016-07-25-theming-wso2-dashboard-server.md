@@ -75,28 +75,28 @@ portal
 │    ├─── themes
 │         ├─── basic
 │         └─── custom-theme
-│             ├─── css
-│             │    ├─── dashboard.css
-│             │    ├─── portal.css
-│             │    └─── + [ additional css ]
-│             │
-│             ├─── images
-│             │    ├─── favicon.png
-│             │    ├─── logo.png
-│             │    └─── + [ additional images ]
-│             │
-│             ├─── js
-│             │    └─── + [ additional js ]
-│             │
-│             └─── templates
-│                  ├─── create-dashboard.jag
-│                  ├─── dashboard-settings.jag
-│                  ├─── dashboard.jag
-│                  ├─── designer.jag
-│                  ├─── global-navigation.jag
-│                  ├─── index.jag
-│                  ├─── login.jag
-│                  └─── portal-header.jag
+│              ├─── css
+│              │    ├─── dashboard.css
+│              │    ├─── portal.css
+│              │    └─── + [ additional css ]
+│              │
+│              ├─── images
+│              │    ├─── favicon.png
+│              │    ├─── logo.png
+│              │    └─── + [ additional images ]
+│              │
+│              ├─── js
+│              │    └─── + [ additional js ]
+│              │
+│              └─── templates
+│                   ├─── create-dashboard.jag
+│                   ├─── dashboard-settings.jag
+│                   ├─── dashboard.jag
+│                   ├─── designer.jag
+│                   ├─── global-navigation.jag
+│                   ├─── index.jag
+│                   ├─── login.jag
+│                   └─── portal-header.jag
 ...
 └─── themes
      ├─── images

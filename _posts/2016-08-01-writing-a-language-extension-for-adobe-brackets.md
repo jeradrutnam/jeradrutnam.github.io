@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Wrinting a language extension for Adobe Brackets
+title:  Writing a language extension for Adobe Brackets
 comments: yes
 date:   2016-08-01 10:00:29 +0530
 modified_time: 
