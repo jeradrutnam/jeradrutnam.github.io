@@ -331,6 +331,7 @@ function create() {
 #### Add additional private methods
 
 {% highlight javascript %}
+// Function to extend defaults
 function extendDefaults(source, properties) {
     var property;
     for (property in properties) {
@@ -341,6 +342,7 @@ function extendDefaults(source, properties) {
     return source;
 }
 
+// Function to bind event listeners to dynamically created elements
 function initializeEvents() {
     if (this.btnClose) {
         this.btnClose.addEventListener('click', this.hide.bind(this));
