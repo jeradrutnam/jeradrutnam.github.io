@@ -15,3 +15,55 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/custom.js" | prepend: site.baseurl }}"></script>
+
+
+<style>
+    .popup-message-overlay {
+        display: none;
+        background: #000;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        opacity: 0.4;
+    }
+    .popup-message-window {
+        display: none;
+        z-index: 101;
+        width: 70% !important;
+        background: #313131;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .popup-message-window button {
+        border: none;
+        color: #313131;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 20px;
+        width: 20px;
+        padding: 0 5px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .popup-message-open {
+        display: block;
+    }
+</style>
+<script src="{{ "/popupMessage.js" | prepend: site.baseurl }}"></script>
+<script>
+var newMessage = new popupMessage({
+    content: '<p>Hello World!</p>',
+});
+
+//newMessage.show();
+</script>
