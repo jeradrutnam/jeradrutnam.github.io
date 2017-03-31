@@ -11,6 +11,8 @@ tags:
 - JavaScript
 ---
 
+Well here is an quick method to do it. See the example below.
+
 ### Sample HTML
 
 {% highlight html %}
