@@ -3,7 +3,7 @@ layout: post
 title:  Some git commands to remember
 comments: yess
 date:   2016-07-04 10:45:29 +0530
-modified_time: 2016-07-10 10:49:29 +0530
+modified_time: 2017-06-13 12:49:29 +0530
 categories: Git
 tags:
 - Git
@@ -70,6 +70,14 @@ git push # Push commits to repo
 {% highlight shell %}
 git remote -v # Checking remote repos
 git remote add upstream <https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git> # Adding upstream [original repo] to git remote
+git remote -v # Checking remote repos again to see whether its updated
+{% endhighlight %}
+
+### Change Git remote url - update orgin
+
+{% highlight shell %}
+git remote -v # Checking remote repos
+git remote set-url <https://github.com/YOU/FORKED_REPOSITORY.git> # Change orign [fork repo] url
 git remote -v # Checking remote repos again to see whether its updated
 {% endhighlight %}
 
