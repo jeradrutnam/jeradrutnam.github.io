@@ -3,8 +3,8 @@ layout: post
 title:  Some git commands to remember
 comments: yess
 date:   2016-07-04 10:45:29 +0530
-modified_time: 2017-06-13 12:49:29 +0530
-categories: Git
+modified_time: 2017-07-13 9:48:29 +0530
+categories: Git20
 tags:
 - Git
 - GitHub
@@ -110,4 +110,17 @@ git clean -df # Force clean to head
 {% highlight shell %}
 git reset --hard <revision_id_of_last_known_good_commit> # Reset back to a last known good commit
 git push --force # Force update repo
+{% endhighlight %}
+
+### Git update & merge local repo with a specific PR
+
+{% highlight shell %}
+git fetch upstream pull/<pr>/head
+{% endhighlight %}
+
+### Git create a branch with specific PR
+
+{% highlight shell %}
+git fetch upstream pull/<pr>/head:<pr>
+git checkout <pr>
 {% endhighlight %}
