@@ -124,3 +124,9 @@ git fetch upstream pull/<pr>/head
 git fetch upstream pull/<pr>/head:<pr>
 git checkout <pr>
 {% endhighlight %}
+
+### Git rebase pull (To avoid merge commits)
+
+{% highlight shell %}
+git rebase upstream/master
+{% endhighlight %}
