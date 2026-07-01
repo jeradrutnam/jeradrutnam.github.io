@@ -22,7 +22,7 @@ body {
 }
 
 /* ── NAV ── */
-nav {
+#nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 200;
@@ -32,7 +32,7 @@ nav {
   justify-content: space-between;
   transition: background 0.4s, backdrop-filter 0.4s;
 }
-nav.scrolled {
+#nav.scrolled {
   background: rgba(4,6,15,0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -59,9 +59,6 @@ nav.scrolled {
 }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
 
-/* ── VIEWS ── */
-.view { display: none; }
-.view.active { display: block; }
 
 /* ── HERO ── */
 #hero {
@@ -71,6 +68,18 @@ nav.scrolled {
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+#hero::before {
+  content: '';
+  position: absolute;
+  opacity: 0.1;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: url(../images/jerad_rutnam.png) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-color: currentcolor;
 }
 .orb {
   position: absolute;
@@ -303,7 +312,8 @@ nav.scrolled {
 .exp-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--violet), transparent); transform: scaleX(0); transition: transform 0.4s; }
 .exp-card:hover { background: var(--surface); }
 .exp-card:hover::before { transform: scaleX(1); }
-.exp-icon { font-size: 1.25rem; margin-bottom: 1.25rem; display: block; }
+.exp-icon { width: 28px; height: 28px; margin-bottom: 1.25rem; display: block; color: var(--violet); stroke: currentcolor; fill: none; }
+.c-icon { width: 24px; height: 24px; margin-bottom: 0.75rem; flex-shrink: 0; color: var(--violet); stroke: currentcolor; fill: none; }
 .exp-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text); margin-bottom: 1rem; }
 .exp-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .tag { font-family: 'Courier New', monospace; font-size: 0.6rem; padding: 0.2rem 0.55rem; border: 1px solid var(--border); color: var(--muted); letter-spacing: 0.05em; background: rgba(139,47,255,0.04); }
@@ -328,17 +338,14 @@ nav.scrolled {
 .talk-pill { padding: 0.3rem 1rem; border: 1px solid rgba(139,47,255,0.4); font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--violet); font-family: monospace; white-space: nowrap; }
 
 /* ── CONNECT ── */
-#view-connect { min-height: 100vh; }
-.connect-bg { position: fixed; inset: 0; pointer-events: none; z-index: -1; overflow: hidden; }
+.section-connect { position: relative; overflow: hidden; }
+.connect-orbs { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .co1 { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(139,47,255,0.1), transparent 70%); top: -200px; right: -150px; }
 .co2 { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(0,207,255,0.07), transparent 70%); bottom: 0; left: -100px; }
 .connect-hero {
-  min-height: 55vh;
-  display: flex;
-  align-items: flex-end;
-  padding: 12rem 3rem 5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
 }
 .connect-kicker {
   font-family: 'Courier New', monospace;
@@ -367,16 +374,22 @@ nav.scrolled {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.connect-sub { font-size: 1rem; color: var(--label); max-width: 460px; line-height: 1.8; }
+.connect-sub {
+  font-size: 1rem;
+  color: var(--label); 
+  max-width: 660px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
 .connect-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 3rem 5rem;
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
+  margin-bottom: 2rem;
 }
 .c-card {
   background: var(--bg);
@@ -399,7 +412,7 @@ nav.scrolled {
 .c-platform { font-family: 'Courier New', monospace; font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--violet); margin-bottom: 0.5rem; }
 .c-handle { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); line-height: 1.1; margin-bottom: 0.5rem; }
 .c-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; max-width: 280px; }
-.connect-loc { max-width: 1200px; margin: 0 auto; padding: 0 3rem 5rem; display: flex; align-items: center; gap: 1rem; color: var(--muted); font-size: 0.82rem; font-family: monospace; letter-spacing: 0.08em; }
+.connect-loc { position: relative; z-index: 1; display: flex; align-items: center; gap: 1rem; color: var(--muted); font-size: 0.82rem; font-family: monospace; letter-spacing: 0.08em; }
 .loc-pulse { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 6px var(--cyan); flex-shrink: 0; animation: pl 2.5s ease-in-out infinite; }
 @keyframes pl { 0%,100% { box-shadow: 0 0 4px var(--cyan); } 50% { box-shadow: 0 0 12px var(--cyan); } }
 
@@ -414,7 +427,7 @@ nav.scrolled {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  nav { padding: 1.25rem 1.5rem; }
+  #nav { padding: 1.25rem 1.5rem; }
   .nav-links { gap: 1.5rem; }
   .hero-content { grid-template-columns: 1fr; }
   .hero-photo-wrap { display: none; }

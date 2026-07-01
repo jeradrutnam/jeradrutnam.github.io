@@ -1,27 +1,24 @@
-// ── ROUTING ──
-function go(view) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.getElementById('view-' + view).classList.add('active');
-  document.querySelectorAll('.nav-links a[data-view]').forEach(a =>
-    a.classList.toggle('active', a.dataset.view === view));
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  history.replaceState(null, '', view === 'home' ? '/' : '/' + view);
-}
-
-function scrollSection(sel) {
-  go('home');
-  setTimeout(() => {
-    const el = document.querySelector(sel);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 80);
-}
-
-const path = location.pathname.replace(/^\//, '').replace('index.html', '');
-if (path === 'connect') go('connect');
-
-// ── NAV SCROLL ──
+// ── NAV SCROLL + ACTIVE HASH HIGHLIGHT ──
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
+
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+  updateActiveNav();
+}, { passive: true });
+
+function updateActiveNav() {
+  const sections = ['hero', 'about', 'expertise', 'speaking', 'connect'];
+  let current = 'hero';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.getBoundingClientRect().top <= 120) current = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}
+
+updateActiveNav();
 
 // ── CANVAS PARTICLES ──
 const canvas = document.getElementById('hero-canvas');
